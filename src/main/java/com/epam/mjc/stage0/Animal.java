@@ -1,9 +1,9 @@
 package com.epam.mjc.stage0;
 
 public class Animal {
-    public int numberOfPaws;
-    public  String color;
-    public  boolean hasFur;
+    private int numberOfPaws;
+    private  String color;
+    private  boolean hasFur;
 
 
     public Animal (int numberOfPaws,String color, boolean hasFur){
@@ -19,9 +19,9 @@ public class Animal {
         else
             fur = "no";    
         if (numberOfPaws>1)
-            paw = "paws";
-        else
             paw = "paw";
+        else
+            paw = "paws";
         
         return "This animal is mostly " + this.color + ". It has " 
             + this.numberOfPaws + " "+paw + " and " + fur + " fur."; 
