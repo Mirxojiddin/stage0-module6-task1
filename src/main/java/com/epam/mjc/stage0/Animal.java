@@ -6,7 +6,7 @@ public class Animal {
     private  boolean hasFur;
 
 
-    public Animal (int numberOfPaws,String color, boolean hasFur){
+    public Animal (String color,int numberOfPaws, boolean hasFur){
         this.color = color;
         this.numberOfPaws = numberOfPaws;
         this.hasFur = hasFur;
@@ -19,11 +19,15 @@ public class Animal {
         else
             fur = "no";    
         if (numberOfPaws>1)
-            paw = "paw";
-        else
             paw = "paws";
+        else
+            paw = "paw";
         
         return "This animal is mostly " + this.color + ". It has " 
             + this.numberOfPaws + " "+paw + " and " + fur + " fur."; 
+    }
+    public static void main(String[] args) {
+        Animal animal = new Animal("red", 3, true);
+        System.out.println(animal.getDescription());
     }
 }

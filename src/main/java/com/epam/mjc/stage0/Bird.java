@@ -2,7 +2,7 @@ package com.epam.mjc.stage0;
 
 public class Bird extends Animal{
     public Bird (){
-        super(2, "blue", false);
+        super("blue",2, false);
     }
     public String getDescription(){
         
