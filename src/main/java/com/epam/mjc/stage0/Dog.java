@@ -13,10 +13,7 @@ public class Dog extends Animal {
         return "This animal is mostly " + this.color + ". It has " 
             + this.numberOfPaws + " paws and " + fur + " fur."; 
     }
-    public static void main(String[] args) {
-        Dog dog = new Dog();
-        System.out.println(dog.getDescription());
-    }
+    
 }
 
 
