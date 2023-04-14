@@ -8,4 +8,5 @@ public class Bird extends Animal{
         
         return "This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly."; 
     }
+
 }

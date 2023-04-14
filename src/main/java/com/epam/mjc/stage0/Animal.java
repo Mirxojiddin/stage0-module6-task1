@@ -26,8 +26,4 @@ public class Animal {
         return "This animal is mostly " + this.color + ". It has " 
             + this.numberOfPaws + " "+paw + " and " + fur + " fur."; 
     }
-    public static void main(String[] args) {
-        Animal animal = new Animal("red", 3, true);
-        System.out.println(animal.getDescription());
-    }
 }
